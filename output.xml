@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230222 21:35:46.113" rpa="false" schemaversion="3">
+<suite id="s1" name="FN01" source="D:\Coding Study\sofTest\FN01.robot">
+<test id="s1-t1" name="TC-PSF-01-02-01 ตรวจสอบการกดปุ่มเข้าสู่ระบบ" line="70">
+<kw name="เปิดหน้าจอ">
+<arg>${url}</arg>
+<doc>กดลิ้งค์เพื่อเปิด Browser</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${web_browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230222 21:35:46.438" level="INFO">Opening browser 'edge' to base url 'http://127.0.0.1:8080/'.</msg>
+<status status="PASS" starttime="20230222 21:35:46.437" endtime="20230222 21:35:49.998"/>
+</kw>
+<status status="PASS" starttime="20230222 21:35:46.437" endtime="20230222 21:35:49.999"/>
+</kw>
+<kw name="กรอกข้อมูล">
+<arg>${txt_email}</arg>
+<arg>somnuk</arg>
+<doc>กรอกข้อมูล</doc>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt}</arg>
+<arg>${data_search}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230222 21:35:50.002" level="INFO">Typing text 'somnuk' into text field 'email'.</msg>
+<status status="PASS" starttime="20230222 21:35:50.000" endtime="20230222 21:35:50.148"/>
+</kw>
+<status status="PASS" starttime="20230222 21:35:50.000" endtime="20230222 21:35:50.149"/>
+</kw>
+<kw name="กรอกข้อมูล">
+<arg>${txt_pass}</arg>
+<arg>123456</arg>
+<doc>กรอกข้อมูล</doc>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt}</arg>
+<arg>${data_search}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230222 21:35:50.151" level="INFO">Typing text '123456' into text field 'password'.</msg>
+<status status="PASS" starttime="20230222 21:35:50.150" endtime="20230222 21:35:50.313"/>
+</kw>
+<status status="PASS" starttime="20230222 21:35:50.150" endtime="20230222 21:35:50.314"/>
+</kw>
+<kw name="กดปุ่ม">
+<arg>${btn_ok}</arg>
+<doc>กดปุ่ม</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230222 21:35:50.316" level="INFO">Clicking button 'btnok'.</msg>
+<status status="PASS" starttime="20230222 21:35:50.315" endtime="20230222 21:35:50.504"/>
+</kw>
+<status status="PASS" starttime="20230222 21:35:50.315" endtime="20230222 21:35:50.504"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230222 21:35:50.504" endtime="20230222 21:35:52.715"/>
+</kw>
+<status status="PASS" starttime="20230222 21:35:46.436" endtime="20230222 21:35:52.715"/>
+</test>
+<status status="PASS" starttime="20230222 21:35:46.116" endtime="20230222 21:35:52.717"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="FN01">FN01</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
