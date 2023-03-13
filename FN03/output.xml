@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230312 22:22:50.084" rpa="false" schemaversion="3">
+<suite id="s1" name="FN03-03" source="D:\Coding Study\sofTest\FN03\FN03-03.robot">
+<test id="s1-t1" name="TC-PSF-03-03-01 ตรวจสอบการแสดงผลข้อมูลรายชื่อผู้ใช้งานสถานะอาจารย์" line="46">
+<kw name="เปิดหน้าจอ">
+<arg>${url}</arg>
+<doc>เปิดหน้าจอ</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${web_browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230312 22:22:50.427" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:8080/'.</msg>
+<status status="PASS" starttime="20230312 22:22:50.426" endtime="20230312 22:22:54.146"/>
+</kw>
+<status status="PASS" starttime="20230312 22:22:50.426" endtime="20230312 22:22:54.146"/>
+</kw>
+<kw name="กรอกข้อมูล">
+<arg>${txt_email}</arg>
+<arg>${user1}</arg>
+<doc>ใช้กรอกข้อมูล</doc>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt}</arg>
+<arg>${input}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230312 22:22:54.150" level="INFO">Typing text 'pichet' into text field 'email'.</msg>
+<status status="PASS" starttime="20230312 22:22:54.148" endtime="20230312 22:22:54.268"/>
+</kw>
+<status status="PASS" starttime="20230312 22:22:54.147" endtime="20230312 22:22:54.269"/>
+</kw>
+<kw name="กรอกข้อมูล">
+<arg>${txt_pass}</arg>
+<arg>${pass1}</arg>
+<doc>ใช้กรอกข้อมูล</doc>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt}</arg>
+<arg>${input}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230312 22:22:54.270" level="INFO">Typing text '123456' into text field 'password'.</msg>
+<status status="PASS" starttime="20230312 22:22:54.269" endtime="20230312 22:22:54.402"/>
+</kw>
+<status status="PASS" starttime="20230312 22:22:54.269" endtime="20230312 22:22:54.402"/>
+</kw>
+<kw name="กดปุ่ม">
+<doc>กดปุ่มเข้าสู่ระบบและเปิดหน้าจัดการนิสิตจบไม่ตรงแผน</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_ok}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230312 22:22:54.405" level="INFO">Clicking button 'btnok'.</msg>
+<status status="PASS" starttime="20230312 22:22:54.404" endtime="20230312 22:22:56.038"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${manageEnp}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230312 22:22:56.039" level="INFO">Clicking link 'xpath=//a[@href="/manageStudentConsider"]'.</msg>
+<status status="PASS" starttime="20230312 22:22:56.038" endtime="20230312 22:22:56.197"/>
+</kw>
+<status status="PASS" starttime="20230312 22:22:54.403" endtime="20230312 22:22:56.197"/>
+</kw>
+<kw name="ตรวจสอบสถานะ">
+<arg>${teacher}</arg>
+<doc>ตรวจสอบสถานะ</doc>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>${pos}</arg>
+<arg>${position}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20230312 22:22:56.242" level="INFO">Element 'position' contains text 'อาจารย์'.</msg>
+<status status="PASS" starttime="20230312 22:22:56.199" endtime="20230312 22:22:56.242"/>
+</kw>
+<status status="PASS" starttime="20230312 22:22:56.198" endtime="20230312 22:22:56.243"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230312 22:22:56.243" endtime="20230312 22:22:58.458"/>
+</kw>
+<status status="PASS" starttime="20230312 22:22:50.423" endtime="20230312 22:22:58.459"/>
+</test>
+<test id="s1-t2" name="TC-PSF-03-03-02 ตรวจสอบการแสดงผลข้อมูลรายชื่อผู้ใช้งานสถานะเจ้าหน้าที่" line="52">
+<kw name="เปิดหน้าจอ">
+<arg>${url}</arg>
+<doc>เปิดหน้าจอ</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${web_browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230312 22:22:58.466" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:8080/'.</msg>
+<status status="PASS" starttime="20230312 22:22:58.465" endtime="20230312 22:23:02.390"/>
+</kw>
+<status status="PASS" starttime="20230312 22:22:58.465" endtime="20230312 22:23:02.390"/>
+</kw>
+<kw name="กรอกข้อมูล">
+<arg>${txt_email}</arg>
+<arg>${user2}</arg>
+<doc>ใช้กรอกข้อมูล</doc>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt}</arg>
+<arg>${input}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230312 22:23:02.392" level="INFO">Typing text 'somnuk' into text field 'email'.</msg>
+<status status="PASS" starttime="20230312 22:23:02.392" endtime="20230312 22:23:02.523"/>
+</kw>
+<status status="PASS" starttime="20230312 22:23:02.391" endtime="20230312 22:23:02.523"/>
+</kw>
+<kw name="กรอกข้อมูล">
+<arg>${txt_pass}</arg>
+<arg>${pass2}</arg>
+<doc>ใช้กรอกข้อมูล</doc>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt}</arg>
+<arg>${input}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230312 22:23:02.525" level="INFO">Typing text '123456' into text field 'password'.</msg>
+<status status="PASS" starttime="20230312 22:23:02.525" endtime="20230312 22:23:02.660"/>
+</kw>
+<status status="PASS" starttime="20230312 22:23:02.524" endtime="20230312 22:23:02.660"/>
+</kw>
+<kw name="กดปุ่ม">
+<doc>กดปุ่มเข้าสู่ระบบและเปิดหน้าจัดการนิสิตจบไม่ตรงแผน</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_ok}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230312 22:23:02.661" level="INFO">Clicking button 'btnok'.</msg>
+<status status="PASS" starttime="20230312 22:23:02.661" endtime="20230312 22:23:04.245"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${manageEnp}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230312 22:23:04.245" level="INFO">Clicking link 'xpath=//a[@href="/manageStudentConsider"]'.</msg>
+<status status="PASS" starttime="20230312 22:23:04.245" endtime="20230312 22:23:04.394"/>
+</kw>
+<status status="PASS" starttime="20230312 22:23:02.661" endtime="20230312 22:23:04.395"/>
+</kw>
+<kw name="ตรวจสอบสถานะ">
+<arg>${staff}</arg>
+<doc>ตรวจสอบสถานะ</doc>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>${pos}</arg>
+<arg>${position}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20230312 22:23:04.440" level="INFO">Element 'position' contains text 'เจ้าหน้าที่'.</msg>
+<status status="PASS" starttime="20230312 22:23:04.396" endtime="20230312 22:23:04.440"/>
+</kw>
+<status status="PASS" starttime="20230312 22:23:04.395" endtime="20230312 22:23:04.440"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230312 22:23:04.441" endtime="20230312 22:23:06.671"/>
+</kw>
+<status status="PASS" starttime="20230312 22:22:58.462" endtime="20230312 22:23:06.671"/>
+</test>
+<status status="PASS" starttime="20230312 22:22:50.086" endtime="20230312 22:23:06.673"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="FN03-03">FN03-03</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

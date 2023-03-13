@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230220 23:27:23.415" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230312 16:25:08.834" rpa="false" schemaversion="3">
 <suite id="s1" name="Demo" source="D:\Coding Study\sofTest\test\demo.robot">
 <test id="s1-t1" name="เปิด google.co.th ด้วย Chrome" line="5">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>http://www.google.co.th</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230220 23:27:23.863" level="INFO">Opening browser 'chrome' to base url 'http://www.google.co.th'.</msg>
-<status status="PASS" starttime="20230220 23:27:23.862" endtime="20230220 23:27:28.485"/>
+<msg timestamp="20230312 16:25:09.148" level="INFO">Opening browser 'chrome' to base url 'http://www.google.co.th'.</msg>
+<status status="PASS" starttime="20230312 16:25:09.146" endtime="20230312 16:25:26.052"/>
 </kw>
-<status status="PASS" starttime="20230220 23:27:23.861" endtime="20230220 23:27:28.486"/>
+<status status="PASS" starttime="20230312 16:25:09.145" endtime="20230312 16:25:26.053"/>
 </test>
-<status status="PASS" starttime="20230220 23:27:23.417" endtime="20230220 23:27:28.491"/>
+<status status="PASS" starttime="20230312 16:25:08.836" endtime="20230312 16:25:26.056"/>
 </suite>
 <statistics>
 <total>

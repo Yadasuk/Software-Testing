@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230313 18:17:24.875" rpa="false" schemaversion="3">
+<suite id="s1" name="FN04-06" source="D:\Coding Study\sofTest\FN04\FN04-06.robot">
+<test id="s1-t1" name="TC-PSF-04-06-01 ตรวจสอบการแสดงผลฟิลเตอร์ Dropdown ข้อมูลระดับ" line="57">
+<kw name="เปิดหน้าจอ">
+<arg>${url}</arg>
+<doc>เข้าสู่ระบบและเปิดหน้าจอนิสิตจบไม่ตรงแผน</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${web_browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230313 18:17:25.217" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:8080/'.</msg>
+<status status="PASS" starttime="20230313 18:17:25.217" endtime="20230313 18:17:29.577"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_email}</arg>
+<arg>${login_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230313 18:17:29.578" level="INFO">Typing text 'pichet' into text field 'email'.</msg>
+<status status="PASS" starttime="20230313 18:17:29.577" endtime="20230313 18:17:29.710"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_pass}</arg>
+<arg>${login_pass}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230313 18:17:29.710" level="INFO">Typing text '123456' into text field 'password'.</msg>
+<status status="PASS" starttime="20230313 18:17:29.710" endtime="20230313 18:17:29.861"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_ok}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230313 18:17:29.862" level="INFO">Clicking button 'btnok'.</msg>
+<status status="PASS" starttime="20230313 18:17:29.862" endtime="20230313 18:17:31.133"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${manageEnp}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230313 18:17:31.134" level="INFO">Clicking link 'xpath=//a[@href="/manageStudentEnp"]'.</msg>
+<status status="PASS" starttime="20230313 18:17:31.133" endtime="20230313 18:17:31.377"/>
+</kw>
+<status status="PASS" starttime="20230313 18:17:25.217" endtime="20230313 18:17:31.378"/>
+</kw>
+<kw name="กดปุ่ม">
+<arg>${btn_add}</arg>
+<doc>กดปุ่ม</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230313 18:17:31.380" level="INFO">Clicking button 'btnAdd'.</msg>
+<status status="PASS" starttime="20230313 18:17:31.380" endtime="20230313 18:17:31.574"/>
+</kw>
+<status status="PASS" starttime="20230313 18:17:31.378" endtime="20230313 18:17:31.575"/>
+</kw>
+<kw name="เปิดหน้าจอเพิ่มข้อมูล">
+<doc>ใช้เปิดหน้าจอเพิ่มข้อมูล</doc>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>locator=NEW</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20230313 18:17:31.578" endtime="20230313 18:17:31.628"/>
+</kw>
+<status status="PASS" starttime="20230313 18:17:31.576" endtime="20230313 18:17:31.628"/>
+</kw>
+<kw name="เลือกจาก Dropdown ระดับ">
+<doc>แสดงข้อมูล</doc>
+<kw name="Get List Items" library="SeleniumLibrary">
+<arg>${dropdownlevel}</arg>
+<doc>Returns all labels or values of selection list ``locator``.</doc>
+<status status="PASS" starttime="20230313 18:17:31.630" endtime="20230313 18:17:32.048"/>
+</kw>
+<status status="PASS" starttime="20230313 18:17:31.629" endtime="20230313 18:17:32.048"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230313 18:17:32.048" endtime="20230313 18:17:34.318"/>
+</kw>
+<status status="PASS" starttime="20230313 18:17:25.215" endtime="20230313 18:17:34.318"/>
+</test>
+<test id="s1-t2" name="TC-PSF-04-06-02 ตรวจสอบการแสดงผลฟิลเตอร์ Dropdown ข้อมูลสถานภาพ" line="62">
+<kw name="เปิดหน้าจอ">
+<arg>${url}</arg>
+<doc>เข้าสู่ระบบและเปิดหน้าจอนิสิตจบไม่ตรงแผน</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${web_browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230313 18:17:34.321" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:8080/'.</msg>
+<status status="PASS" starttime="20230313 18:17:34.321" endtime="20230313 18:17:37.103"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_email}</arg>
+<arg>${login_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230313 18:17:37.103" level="INFO">Typing text 'pichet' into text field 'email'.</msg>
+<status status="PASS" starttime="20230313 18:17:37.103" endtime="20230313 18:17:37.224"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_pass}</arg>
+<arg>${login_pass}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230313 18:17:37.225" level="INFO">Typing text '123456' into text field 'password'.</msg>
+<status status="PASS" starttime="20230313 18:17:37.225" endtime="20230313 18:17:37.361"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_ok}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230313 18:17:37.361" level="INFO">Clicking button 'btnok'.</msg>
+<status status="PASS" starttime="20230313 18:17:37.361" endtime="20230313 18:17:39.457"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${manageEnp}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230313 18:17:39.458" level="INFO">Clicking link 'xpath=//a[@href="/manageStudentEnp"]'.</msg>
+<status status="PASS" starttime="20230313 18:17:39.457" endtime="20230313 18:17:39.624"/>
+</kw>
+<status status="PASS" starttime="20230313 18:17:34.320" endtime="20230313 18:17:39.624"/>
+</kw>
+<kw name="กดปุ่ม">
+<arg>${btn_add}</arg>
+<doc>กดปุ่ม</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230313 18:17:39.626" level="INFO">Clicking button 'btnAdd'.</msg>
+<status status="PASS" starttime="20230313 18:17:39.625" endtime="20230313 18:17:39.798"/>
+</kw>
+<status status="PASS" starttime="20230313 18:17:39.625" endtime="20230313 18:17:39.799"/>
+</kw>
+<kw name="เปิดหน้าจอเพิ่มข้อมูล">
+<doc>ใช้เปิดหน้าจอเพิ่มข้อมูล</doc>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>locator=NEW</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20230313 18:17:39.801" endtime="20230313 18:17:39.844"/>
+</kw>
+<status status="PASS" starttime="20230313 18:17:39.800" endtime="20230313 18:17:39.844"/>
+</kw>
+<kw name="เลือกจาก Dropdown สถานภาพ">
+<doc>แสดงข้อมูล</doc>
+<kw name="Get List Items" library="SeleniumLibrary">
+<arg>${dropdownstatus}</arg>
+<doc>Returns all labels or values of selection list ``locator``.</doc>
+<status status="PASS" starttime="20230313 18:17:39.846" endtime="20230313 18:17:40.447"/>
+</kw>
+<status status="PASS" starttime="20230313 18:17:39.845" endtime="20230313 18:17:40.447"/>
+</kw>
+<kw name="กดปุ่ม">
+<arg>${cancel}</arg>
+<doc>กดปุ่ม</doc>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230313 18:17:40.448" level="INFO">Clicking button 'cancel'.</msg>
+<status status="PASS" starttime="20230313 18:17:40.448" endtime="20230313 18:17:40.611"/>
+</kw>
+<status status="PASS" starttime="20230313 18:17:40.447" endtime="20230313 18:17:40.611"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230313 18:17:40.612" endtime="20230313 18:17:43.835"/>
+</kw>
+<status status="PASS" starttime="20230313 18:17:34.319" endtime="20230313 18:17:43.836"/>
+</test>
+<status status="PASS" starttime="20230313 18:17:24.878" endtime="20230313 18:17:43.838"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="FN04-06">FN04-06</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
