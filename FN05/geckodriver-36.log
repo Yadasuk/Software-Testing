@@ -1,0 +1,15 @@
+1678977917042	geckodriver	INFO	Listening on 127.0.0.1:51583
+1678977920095	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51584" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\ASUS\\AppData\\Local\\Temp\\rust_mozprofileyoTicW"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1678977920512	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1678977920517	Marionette	INFO	Listening on port 51596
+Read port: 51596
+WebDriver BiDi listening on ws://127.0.0.1:51584
+1678977920656	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ASUS\\AppData\\Local\\Temp\\rust_mozprofileyoTicW\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:51584/devtools/browser/a5100d62-416b-441b-8aeb-ef8e11b1e0b9
+1678977924117	Marionette	INFO	Stopped listening on port 51596
+Dynamically enable window occlusion 1
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.jsm", 237))

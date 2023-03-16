@@ -3,8 +3,8 @@ Library     SeleniumLibrary
 Test Teardown   close Browser
 
 *** Variables ***
-${web_browser}    chrome
-#${web_browser}    firefox 
+#${web_browser}    chrome
+${web_browser}    firefox 
 #${web_browser}    edge
 ${url}            http://127.0.0.1:8080/
 
@@ -53,3 +53,4 @@ TC-PSF-04-02-03 ตรวจสอบการกดปุ่มแก้ไข
 TC-PSF-04-02-04 ตรวจสอบการกดปุ่มลบ
     เปิดหน้าจอ           ${url} 
     กดปุ่มไอคอน         ${btn_delete}
+    

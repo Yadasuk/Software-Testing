@@ -1,0 +1,19 @@
+1678980148825	geckodriver	INFO	Listening on 127.0.0.1:49338
+1678980151854	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49339" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\ASUS\\AppData\\Local\\Temp\\rust_mozprofileOdF74Y"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1678980152227	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1678980152233	Marionette	INFO	Listening on port 49353
+Read port: 49353
+WebDriver BiDi listening on ws://127.0.0.1:49339
+1678980152395	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ASUS\\AppData\\Local\\Temp\\rust_mozprofileOdF74Y\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:49339/devtools/browser/f902e863-83ff-4e37-96d9-0d7a7ba90b6f
+JavaScript warning: http://127.0.0.1:8080/, line 89: unreachable code after return statement
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8080."
+JavaScript warning: http://127.0.0.1:8080/, line 89: unreachable code after return statement
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8080."
+JavaScript warning: http://127.0.0.1:8080/followStudentCon/1, line 129: unreachable code after return statement
+1678980227024	Marionette	INFO	Stopped listening on port 49353
+Dynamically enable window occlusion 1

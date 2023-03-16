@@ -3,8 +3,8 @@ Library     SeleniumLibrary
 Test Teardown   close Browser
 
 *** Variables ***
-${web_browser}    chrome
-#${web_browser}    firefox 
+#${web_browser}    chrome
+${web_browser}    firefox 
 #${web_browser}    edge
 ${url}            http://127.0.0.1:8080/
 
